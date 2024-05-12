@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicando usuario empleado despido</title>
+   <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <form action="" id="form_usuario">
+        <label for="">Usuario</label>
+        <input type="text" name="" id="nombre" autocomplete="off" value="">
+        <label for="">Carrera</label>
+        <input type="text" name="" id="carrera" autocomplete="off" value="">
+        <button type="button" id="btn_registrar">Registrar</button>
+    </form>
+    <div id="lista_usuarios">
+        <div>Lista de Usuarios</div>
+        <div id="cantidad_usuarios"></div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Carrera</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div id="lista_empleados">
+        <div>Lista de Empleados</div>
+        <div id="cantidad_empleados"></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Carrera</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div id="container_busqueda">
+        <button id="btn_form_buscar">Buscar Usuario por ID</button>
+        <div id="formularioBusqueda" style="display: none;">
+            <form id="formBusqueda">
+                <label for="idUsuario">ID del Usuario:</label>
+                <input type="text" id="id_usuario" name="idUsuario" autocomplete="off">
+                <button type="button" id="btn_buscar">Buscar</button>
+            </form>
+        </div>
+        <div id="table_usuario_encontrado">  
+        </div>
+    </div>
+    <div id="edit_form_wrapper" style="display: none;">
+        <div id="edit_form_container">
+            <h2>Editar Usuario</h2>
+            <form id="edit_form">
+                <label for="edit_nombre">Nombre:</label>
+                <input type="text" id="edit_nombre" name="edit_nombre" autocomplete="off">
+                <label for="edit_carrera">Carrera:</label>
+                <input type="text" id="edit_carrera" name="edit_carrera" autocomplete="off">
+                <button type="button" id="btn_actualizar">Actualizar</button>
+                <button type="button" id="btn_cancelar">Cancelar</button>
+            </form>
+        </div>
+    </div>
+    
+
+</body>
+<script src="jquery.js"></script>
+<script src="myapp.js"></script>
+<script src="dashboard.js"></script>
+
+</html>

@@ -1,0 +1,171 @@
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
+#form_usuario {
+    width: 100%;
+    max-width: 400px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+}
+
+#form_usuario input[type="text"],
+#form_usuario button {
+    width: 50%;
+    height: 25px;
+    margin: auto;
+}
+
+#form_usuario label {
+    align-self: flex-start; 
+    padding-left: 25%;
+}
+#lista_usuarios,
+#lista_empleados {
+    width: 100%;
+    max-width: 400px; 
+}
+
+#lista_usuarios table,
+#lista_empleados table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#lista_usuarios th,
+#lista_empleados th,
+#lista_usuarios td,
+#lista_empleados td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left;
+}
+
+#lista_usuarios th,
+#lista_empleados th {
+    background-color: rgba(176, 36, 36, 0.5);
+    color: white;
+}
+
+#lista_usuarios td button
+ {
+    width: 48%;
+}
+#lista_empleados td button{
+    width: 100%;
+}
+
+
+@media screen and (min-width: 768px) {
+    #form_usuario,
+    #lista_usuarios,
+    #lista_empleados {
+        width: calc(33.33% - 20px); 
+        margin-right: 20px;
+    }
+}
+#container_busqueda {
+    display: grid;
+    margin: 20px auto;
+    border-radius: 5px;
+    width: 40%;
+    padding: 10px;
+}
+
+#formularioBusqueda {
+    align-items: center;
+}
+
+#formularioBusqueda label {
+    margin-right: 10px;
+}
+
+#formularioBusqueda input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#formularioBusqueda button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 30px;
+}
+#btn_form_buscar{
+    width: 45%;
+    margin: auto;
+}
+#btn_buscar{
+    width: 30%;
+}
+.btn_eliminar{
+    width: 15px;
+}
+.btn_editar{
+    width: 5%;
+}
+.btn_contratar{
+    width: 5%;
+}
+.btn_action_cell {
+    display: flex;
+    gap: 5px; 
+}
+
+.btn_contratar,
+.btn_editar,
+.btn_eliminar {
+    flex: 1; 
+}
+
+#table_usuario_encontrado th{
+    background-color: rgba(176, 36, 36, 0.5);
+
+}
+#edit_form_wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#edit_form_container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#edit_form_container h2 {
+    margin-top: 0;
+    color: black;
+
+}
+
+#edit_form label {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+}
+
+#edit_form input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#edit_form button {
+    margin-top: 10px;
+}
